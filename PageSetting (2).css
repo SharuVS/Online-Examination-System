@@ -1,0 +1,76 @@
+﻿body
+{
+	background-color: #0070DF;
+	/*top: 206px;
+	left: 232px;
+	position: absolute;
+	height: 460px;
+	width: 711px;
+	float: left;*/
+}
+
+/*-----BODY SETTING------------*/
+
+
+.Banner
+{
+	background-position:right ;
+	background-image: url('Img/banner1.jpg');
+	position: relative;
+	width: 889px;
+	height: 179px;
+}
+
+.Banner_Footer
+{
+	background-position:  bottom ;
+	background-image: url('Img/banner1.jpg');
+	position: relative;
+	width: 889px;
+	height: 50px;
+}
+
+.Login
+{
+	border-style: solid;
+	border-color: inherit;
+	border-width: 1px 1px 1px 1px;
+	width: 40%;
+	height: 100%;
+	float: right;
+	background-color: #DADADA;
+	font-size: small;
+}
+
+.LoginSide
+{
+	height: 100%;
+	width: 58%;
+	float: left;	
+}
+
+.LoginSide2
+{
+	height: 100%;
+	width: 95%;
+	float: left;	
+}
+
+
+.Sidebar
+{
+	height: 100%;
+	width: 20%;
+	float: left;
+}
+
+.Main
+{
+	border-style: solid;
+	border-color: inherit;
+	border-width: 1px 1px 1px 1px;
+	width: 79%;
+	height: 100%;
+	float: right;
+}
+	

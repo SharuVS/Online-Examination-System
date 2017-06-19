@@ -1,0 +1,95 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <link href="PageSetting.css" rel="Stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    </head>
+
+
+
+<body >
+    <form id="form1" runat="server">
+    
+        <center>
+        <div style="border: medium solid #4A4AFF; background-color: #FFFFFF; width: 900px; top: 30px">
+        <table style="width:100%;">
+             <tr>
+                
+                
+              <td>
+                  <div class="Banner" align="right">
+              
+              
+                              <asp:Label ID="lblMsg" runat="server" Font-Bold="True" ForeColor="White"></asp:Label>
+              
+              
+                  </div>
+              </td>
+             </tr>
+             
+            <tr>
+             <td>
+             
+              <div class="Sidebar">
+              
+                  <asp:Menu ID="Menu1" runat="server" BackColor="#B5C7DE" 
+                      DynamicHorizontalOffset="2" Font-Names="Times New Roman" Font-Size="Large" 
+                      ForeColor="#284E98" Height="203px" StaticSubMenuIndent="10px" 
+                      Visible="False" Width="129px">
+                      <StaticSelectedStyle BackColor="#507CD1" />
+                      <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                      <DynamicHoverStyle BackColor="#284E98" ForeColor="White" />
+                      <DynamicMenuStyle BackColor="#B5C7DE" />
+                      <DynamicSelectedStyle BackColor="#507CD1" />
+                      <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                      <StaticHoverStyle BackColor="#284E98" ForeColor="White" />
+                      <Items>
+                          <asp:MenuItem NavigateUrl="~/frmWelcome.aspx" Text="Welcome" Value="Welcome">
+                          </asp:MenuItem>
+                          <asp:MenuItem NavigateUrl="~/frmSetting.aspx" Text="Paper Setting" 
+                              Value="Paper Setting"></asp:MenuItem>
+                          <asp:MenuItem Text="Question Set" Value="Question Set" 
+                              NavigateUrl="~/frmQuestionSet.aspx"></asp:MenuItem>
+                          <asp:MenuItem Text="Create User" Value="Create User" 
+                              NavigateUrl="~/frmUser.aspx"></asp:MenuItem>
+                          <asp:MenuItem NavigateUrl="~/frmResult.aspx" Text="View Result" 
+                              Value="View Result"></asp:MenuItem>
+                          <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Logout" Value="Logout">
+                          </asp:MenuItem>
+                      </Items>
+                  </asp:Menu>
+              
+              </div>
+              
+              <div class="Main">
+                  <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                  </asp:ContentPlaceHolder>
+              </div>
+              
+              
+             </td>
+            </tr>
+            
+            <tr>
+             <td style="font-size: small">
+             
+                 <br />
+             
+             </td>
+            </tr>
+            </table>
+        </div>
+        </center>
+        
+    
+    
+    </form>
+</body>
+
+
+</html>
